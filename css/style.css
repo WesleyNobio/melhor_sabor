@@ -1,0 +1,295 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-rows: 70px 60px 400px 1fr 200px;
+}
+header{
+    background-image: linear-gradient(to bottom, maroon, black);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.icon-nav{
+    display: none;
+    width: 100px;
+    height: 70px;
+}
+.icon-nav > img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+.menu-a{
+    display: block ;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    font-size: 1.1em;
+    margin: 0;
+}
+.menu-a:hover{
+    transition: 0.8s;
+    font-size: large;
+    color: maroon;
+}
+/* =================================== baner ================================ */
+.baner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-corrosceu-baner{
+    background-color: beige;
+    position: relative;
+    width: 98%;
+    height: 95%;
+}
+.div-corrosceu-baner > img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.de{
+    opacity: 0;
+    transition-duration: 2s    
+}
+.ley{
+    opacity: 1;
+    transition-duration: 2s
+}
+/* =================================== div-body ================================ */
+.div-body{
+    display: flex;
+    flex-direction: column;
+}
+.postes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.postes > div{
+    background-color: blue;
+    width: 300px;
+    height: 400px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: 0.8s;
+}
+.postes > div:hover{
+    transition: 0.8s;
+    padding: 15px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.poste{
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifamily, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+}
+.p1{background-image: url(../assets/comida_saudavel.jpg);}
+.p2{background-image: url(../assets/peixe2.jpg);}
+.p3{background-image: url(../assets/carne1.jpg);}
+.texto{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 1));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: 0.8s;
+}
+/* ============================= div-body mapa-email ========================== */
+.mapa-email{
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mapa{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mapa > iframe{
+    width: 90%;
+    height: 70%;
+}
+.ptf1{
+    overflow-x: hidden;
+    width: 98vw;
+}
+.ptf1 > div{
+    width:  100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    margin-left: 100vw;
+}
+.ptf2{
+    width: 98vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ptf2 > div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: -100vw;
+}
+.img-ptf{
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+}
+.p-ptf{
+    width: 40%;
+    text-align: justify;
+    margin: 5px;
+}
+/* ======================================= Email ========================== */
+.email{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 80%;
+    height: 80%;
+}
+form > button{
+    padding: 10px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    margin-top: 5px;
+}
+label{
+    display: block;
+    padding: 5px;
+}
+form > input, textarea{
+    width: 100%;
+    padding: 7px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* =================================== footer ================================ */
+footer{
+    background-image: linear-gradient(to top, maroon,black);    
+}
+.redesociais{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.redesociais > img {
+    width: 70px;
+    height: 70px;
+}
+
+/* ================= responsividade =============== */ 
+@media only screen and (max-width: 600px){
+    body{
+        grid-template-rows: 70px 10px 400px 1fr 200px;
+    }
+    .icon-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        z-index: 1;
+    }
+    ul{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+    .menu-a{
+        width: 100%;
+        border-top: 1px solid white;
+        justify-content: center;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.2);
+        color: white;
+        display: none;
+    }
+}
+@media only screen and (min-width: 600px){
+    .menu-a{
+        display: flex !important;
+    }
+}
+@media only screen and (max-width: 714px){
+    .p-ptf{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 800px){
+    .mapa-email{
+        height: 1000px;
+    }
+    .mapa{
+        width: 100%;
+        height: 50%;
+    }
+    .mapa > iframe{
+        width: 80%;
+        height: 80%;
+    }
+    .email{
+        width: 100%;
+        height: 50%;
+    }
+    form{
+        width: 70%;
+        height: 70%;
+    }
+}
+@media only screen and (max-width: 550px){
+    .mapa > iframe{
+        width: 90%;
+        height: 70%;
+    }
+    form{
+        width: 80%;
+        height: 80%;
+    }
+}
